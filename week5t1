@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="w5t.css">
+</head>
+<body>
+	<div style="margin-left: 60px;">
+	<h5 style="font-size: 110%">Task - 1</h5>
+	<h2 style="font-family: Arial;font-weight: lighter;font-size: 200%;margin-top: -25px;">Calculate determinant of the given matrix:</h2>
+	</div>
+	<div style="display: flex;flex-direction: row;">
+	
+		<div class="setka">
+			<div class="ssetka">
+			<table>
+			<tr>
+				<th><input type="text" id="A" placeholder="A" value=""></th>
+				<th><input type="text" id="B" placeholder="B" value=""></th>
+				<th><input type="text" id="C" placeholder="C" value=""></th>			
+			</tr>
+			<tr>
+				<th><input type="text" id="D" placeholder="D" value=""></th>
+				<th><input type="text" id="E" placeholder="E" value=""></th>
+				<th><input type="text" id="F" placeholder="F" value=""></th>	
+			</tr>
+			<tr>
+				<th><input type="text" id="G" placeholder="G" value=""></th>
+				<th><input type="text" id="H" placeholder="H" value=""></th>
+				<th><input type="text" id="I" placeholder="I" value=""></th>	
+			</tr>
+			</table>
+		</div>
+		<div class="but" onclick="myFunction()">
+			<div style="border: 2px solid red;"></div>
+			<h3>FIND DETERMINANT</h3><img src="next.png" style="width: 30px;height: 30px;padding-left: 70px;padding-top: 15px;">
+		</div>
+	</div>
+
+
+
+		<div class="ans">
+			<div class="Result">Result:</div>
+			<div><p id="NAN">NaN</p></div>
+			<div><p id="Formula">|A| = A(EI-FH) - B(DI-FG) + C(DH-EG) = <span style="font-weight: lighter;">NaN</span></p></div>
+			<div class="lorem">
+				<p>Defintion:<br><span style="font-weight: bold">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+		<script>
+	function myFunction() {
+	  	var A = document.getElementById("A").value;
+	  	var B = document.getElementById("B").value;
+	  	var C = document.getElementById("C").value;
+	  	var D = document.getElementById("D").value;
+	  	var E = document.getElementById("E").value;
+	  	var F = document.getElementById("F").value;
+	  	var G = document.getElementById("G").value;
+	  	var H = document.getElementById("H").value;
+	  	var I = document.getElementById("I").value;
+	  	var x = A*(E*I-F*H) - B*(D*I-F*G) + C*(D*H-E*G);
+	  	var text ="|D| = "+A+"*"+"("+E+"*"+I+"-"+F+"*"+H+")"+ "-" +B+"*"+"("+D+"*"+I+"-"+F+"*"+G+")" +"+"+ C+"*"+"("+D+"*"+H+"-"+E+"*"+G+")"+" = "+x;
+	  	document.getElementById("Formula").innerHTML = text;
+  		document.getElementById("NAN").innerHTML = x;
+}
+</script>
+
+		</script>
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+.setka{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 500px;
+		height: 500px;
+		background-image: url("f.png");
+	 	background-repeat: no-repeat;
+
+		
+
+
+	}
+	.ssetka table,th,tr{
+		
+		border-collapse: collapse;
+		font-size: 100%;
+		font-family: Arial;
+		font-weight: lighter;
+		margin: 0px;
+		padding: 0px;
+
+
+
+
+}	.ssetka table{
+		width:100%;
+		height:100%;
+		margin: 0px;
+		padding: 0px;
+}
+	.ssetka{
+		border:20px solid white;
+		width: 300px;
+		height: 300px;
+		padding-right: 10px;
+		
+
+	}
+
+
+
+.but {
+	border: 1px solid white;
+	margin-top:30px;
+	width: 350px;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	
+
+}
+
+.but h3{
+	padding-left: 15px;	
+	font-family: Arial;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	display: flex;
+	flex-direction: row;
+	height: 20px;
+
+
+}
+.ans{
+	width: 900px;
+	font-family: Arial;
+	font-weight: lighter;
+	flex-direction: column;
+
+
+}
+.Result{
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	width:80px;
+	color:white;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+}
+
+#NAN{
+	margin-top: 30px;
+	font-size:300%;
+	color:red;
+	
+}
+#Formula{
+	margin-top: -20px;
+	padding-bottom: 50px;
+	font-weight: bold;
+ 
+}
+
+
+::placeholder {
+	display: inline-block; 
+	  color: black;
+	  font-size: 50px;
+	  text-align: center;
+}
+input{
+	display: inline-table; 
+	 width: 100%;
+	 height: 103%;
+	 font-size:300%;
+	 text-align: center;
+	 border: 3px solid black;
+	 border-collapse: collapse;
+	}
+
+
+	.lorem{
+		padding-right: 100px;
+	}
+
+			var q=0;
+			var arr = new Array();
+			var pass=new Array();
+			pass[0]="Bugatti Divo";
+			pass[1]="Ford Mustang";
+			pass[2]="Lexus-570";
+			pass[3]="Pagani Zonda F"
+			pass[4]="Lamborghini"
+			var caas=0;
+			var xx = new Image();
+			xx.src="https://3.bp.blogspot.com/-hT27KyPbhsA/XH237isndYI/AAAAAAAAAFA/Q5W7VfAuGt4FcT-o-jY8GmBAGrod_PlDACPcBGAYYCw/s1600/gfdgfgjhklk%253B.jpgs";
+
+			
+
+			arr[0]=new Image();
+			arr[0].src="https://motoring.pxcrush.net/motoring/general/editorial/bugatti-divo-2019-1600-0a.jpg?width=1024";
+			
+			arr[1]=new Image();
+			arr[1].src='https://cnet1.cbsistatic.com/img/paxUPtDodE2HtBbZuwV-50Ml1OA=/2019/01/13/16f6691e-98e9-4973-9e9e-aca278034b92/2020-ford-shelby-mustang-gt500-ogi-2.jpg';
+			
+			arr[2]=new Image();
+			arr[2].src='https://image.nengun.com/catalogue/1024x768/nengun-0000-01-wald-sports_line_lx570_aero_kit-330f318c.png';
+			
+			arr[3]=new Image();
+			arr[3].src='https://icdn2.themanual.com/image/themanual/hennessey-venom-f5-2.jpg';
+			
+			arr[4]=new Image();
+			arr[4].src='https://cdn.hiconsumption.com/wp-content/uploads/2019/01/Lamborghini-Urus-By-Manhart-Performance-0-Hero-1087x725.jpg';
+
+		
+
+			function s(){
+			document.getElementById("resim").src=document.getElementById("second").src;
+				
+					}
+
+			function f(){
+						document.getElementById("resim").src=document.getElementById("first").src;
+					
+					}
+
+			function t(){
+						document.getElementById("resim").src=document.getElementById("three").src;
+						
+					}
+
+
+			function x(){
+						document.getElementById("resim").src=document.getElementById("four").src;
+						
+					}
+
+			function back(){
+				if(q==0){
+					q=5;
+					document.getElementById("resim").src = arr[q-1].src;
+					document.getElementById("first").src = arr[q-1].src;
+
+
+					q--;
+				}else{
+					document.getElementById("resim").src = arr[q-1].src;
+					document.getElementById("first").src = arr[q-1].src;
+					
+					q--;
+				}
+			}
+			
+			function next(){
+				if(q==4){
+					q=-1;
+					document.getElementById("resim").src = arr[q+1].src;
+					document.getElementById("first").src = arr[q+1].src;
+				
+					q++;
+				}else{
+					document.getElementById("resim").src=arr[q+1].src;
+					document.getElementById("first").src = arr[q+1].src;
+					
+					q++;
+					
+			}
+
+
+
+
+
+
+
+
+		}var v=1;
+
+	
+		function back2(){
+				if(v==0){
+					v=4;
+					document.getElementById("second").src=arr[v].src;
+				
+					
+				}
+				else{
+				v-=1;
+				document.getElementById("second").src=arr[v].src;
+									
+			}
+
+
+			}
+
+			function next2(){
+			
+				if(v==4){
+					document.getElementById("second").src=arr[0].src;
+					v=0;
+				}
+				else{
+					v+=1;
+					document.getElementById("second").src=arr[v].src;				}
+			}
+
+			
+
+		
+
+
+
+
+
+		var b=2;
+
+		function next3(){
+			if(b==4){
+					document.getElementById("three").src=arr[0].src;
+					b=0;
+				}
+				else{
+					b+=1;
+					document.getElementById("three").src=arr[b].src;				}
+			
+}
+
+		function back3(){
+				if(b==0){
+					b=4;
+					document.getElementById("three").src=arr[b].src;
+				
+					
+				}
+				else{
+				b-=1;
+				document.getElementById("three").src=arr[b].src;
+									
+			}
+
+
+			}
+
+
+
+
+
+		var n=3;
+		function next4(){
+			if(n==4){
+					document.getElementById("four").src=arr[0].src;
+					n=0;
+				}
+				else{
+					n+=1;
+					document.getElementById("four").src=arr[n].src;				}
+			}
+
+					function back4(){
+				if(n==0){
+					n=4;
+					document.getElementById("four").src=arr[n].src;
+					
+					
+				}
+				else{
+				n-=1;
+				document.getElementById("four").src=arr[n].src;
+									
+			}
+
+
+			}
+		function go(){
+			var a = document.getElementById("in").value;
+ 		 	var result = a.link("https://kolesa.kz/cars/"+a+"/");
+			document.getElementById("sear").innerHTML = result;
+
+		}
+		
+		function apa(){
+			caas-=1;
+			if(caas==-1){
+				caas=4;
+			}
+			document.getElementById("PA").innerHTML = pass[caas];
+
+		}
+		function apa2(){
+			caas+=1;
+			if(caas==5){
+				caas=0;
+			}
+			document.getElementById("PA").innerHTML = pass[caas];
+		}
