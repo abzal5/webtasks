@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="w5t2.css">
+	<script src="w5t2.js">
+	</script>
+</head>
+<body>
+	<div class="cont">
+		<div class="page1">
+			<img id="resim" style="width: 750px;height: 550px;">
+			<p id="resim2"></p>
+		</div>
+		
+
+
+
+		<div class="page2">
+			<div  style="font-size: 300%;position: relative;right: 100px;width: 500px;color:white;">
+				<p style="text-indent: 10px;">Here is the coolest <p id="PA" style="text-indent: 140px;margin-top: -40px;">new car - Tayota</p></p>
+			</div>
+
+			<div id="lorem"><span style="font-weight: bold;"> Lorem Ipsum </span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+
+			<div class="search">
+				<input id="in" value="" type="text" placeholder="Show more" style="height:40px;width:180px;background-color: rgb(20, 23, 32);border:0,5px solid white;color:white;font-size: 100%;">
+				<div class="but"><img src="next.png" style="width: 40px;" onclick="go()"></div>
+			</div>
+				<div id="sear" style="margin-top:10px;color: white;font-size:20px;"></div>
+
+
+		</div>
+
+		<div class="page3">
+			<div  style="border: 2px solid red;height: 100px;"></div>
+			<div class="art" onclick="back(),back2(),back3(),back4(),apa()"><img src="p.png" style="width: 60%;height: 60%;"></div>
+		<div class="sur">	
+			<div onclick="f()" style="-webkit-box-shadow: 0px 10px 50px 0px #0B325E;width:120px;height:80px;margin-right: 10px;margin-top: -30px;"><img id="first" style="width: 100%;height: 100%"></div>
+			<div onclick="s()" style="-webkit-box-shadow: 0px 10px 50px 0px #0B325E;width:120px;height:80px;margin-right: 10px;margin-top: -30px;"><img  id="second" style="width: 100%;height: 100%"></div>
+			<div onclick="t()" style="-webkit-box-shadow: 0px 10px 50px 0px #0B325E;width:120px;height:80px;margin-right: 10px;margin-top: -30px;"><img id="three" style="width: 100%;height: 100%"></div>
+			<div onclick="x()" style="-webkit-box-shadow: 0px 10px 50px 0px #0B325E;width:120px;height:80px;margin-top: -30px;"><img id="four" style="width: 100%;height: 100%"></div>
+			
+		</div>
+			<div class="alg" onclick="next(),next2(),next3(),next4(),apa2()"><img src="next.png" style="width: 60%;height: 60%;"></div>
+		</div>
+
+	</div><script>
+			document.getElementById("resim").src =arr[q].src;
+			document.getElementById("first").src =arr[q].src;
+			document.getElementById("second").src =arr[1].src;
+			document.getElementById("three").src =arr[2].src;
+			document.getElementById("four").src =arr[3].src;
+			document.getElementById("PA").innerHTML = pass[0];
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+		.cont{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin-top: 50px;
+			font-family: Arial;
+			font-weight:lighter;
+		}
+		.page1{
+			
+			width: 700px;
+			height: 550px;
+			padding-right: 250px;
+			-webkit-box-shadow: 0px 10px 16px 0px #0B325E;
+			
+
+		}
+		.page2{
+			border: 1px solid rgb(31, 45, 37);
+			background-color:rgb(20, 23, 32);
+			width: 350px;
+			height: 600px;
+			position: absolute;
+			z-index: 2;
+			left: 950px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+
+
+
+
+
+		.page3{
+			
+			position: absolute;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		 	bottom: 80px;
+		 	width: 650px;
+		 	height: 100px;
+		 	left: 50px;
+		 	border-left-color: red;
+		 	border-left-width: 5px;
+		 	margin-left: 90px; 
+		 	z-index: 2;
+		 	display: flex;
+		 	flex-direction: row;
+		 	justify-content: space-between;
+		 	align-items: center;
+		 	background-color: white;
+
+		}
+		.art{
+			width: 25px;
+			height: 25px;
+			border-radius: 100px;
+			margin-left: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			border: 1px solid white;
+			-webkit-box-shadow: 0px 10px 16px 0px #0B325E;
+		}
+		.alg{
+			width: 25px;
+			height: 25px;
+			border-radius: 100px;
+			margin-right: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			-webkit-box-shadow: 0px 10px 16px 0px #0B325E;
+			border: 1px solid white;
+
+		}
+
+		::placeholder{
+			font-size:100%;
+			color: white;
+			text-indent: 10px;
+			
+
+
+		}
+		.search{
+			display: flex;
+			flex-direction: row;
+			margin-top: 30px;
+			margin-left: -70px;
+			font-color: white;
+		}
+		.but{
+			width:40px;
+			height: 40px;
+			border: 3px solid white;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+		}
+
+
+		.sur{
+			display: flex;
+			flex-direction: row;
+			justify-content:space-between;
+			align-items: center;
+			margin-top: 30px;
+			
+
+		}
+		#first:hover{
+		
+ 		-webkit-transform: scale(100);
+  		transform: scale(1.05); 
+  		cursor: pointer;
+		  	
+		}
+		#second:hover{
+ 		-webkit-transform: scale(100);
+  		transform: scale(1.05); 
+		  	cursor: pointer;
+		}
+		#three:hover{
+	
+ 		-webkit-transform: scale(100);
+  		transform: scale(1.05); 
+		  	cursor: pointer;
+		}
+		#four:hover{
+ 		-webkit-transform: scale(100);
+  		transform: scale(1.05); 
+		  	cursor: pointer;
+		}
+		#lorem{
+			font-family: Arial;color: white;
+			font-weight:lighter;
+			;font-size: 80%;
+			width:300px;
+			margin-top: -10px;
+		}
+		#sear a{
+			text-decoration: none;
+			color:white;
+		}
+    			var q=0;
+			var arr = new Array();
+			var pass=new Array();
+			pass[0]="Bugatti Divo";
+			pass[1]="Ford Mustang";
+			pass[2]="Lexus-570";
+			pass[3]="Pagani Zonda F"
+			pass[4]="Lamborghini"
+			var caas=0;
+			var xx = new Image();
+			xx.src="https://3.bp.blogspot.com/-hT27KyPbhsA/XH237isndYI/AAAAAAAAAFA/Q5W7VfAuGt4FcT-o-jY8GmBAGrod_PlDACPcBGAYYCw/s1600/gfdgfgjhklk%253B.jpgs";
+
+			
+
+			arr[0]=new Image();
+			arr[0].src="https://motoring.pxcrush.net/motoring/general/editorial/bugatti-divo-2019-1600-0a.jpg?width=1024";
+			
+			arr[1]=new Image();
+			arr[1].src='https://cnet1.cbsistatic.com/img/paxUPtDodE2HtBbZuwV-50Ml1OA=/2019/01/13/16f6691e-98e9-4973-9e9e-aca278034b92/2020-ford-shelby-mustang-gt500-ogi-2.jpg';
+			
+			arr[2]=new Image();
+			arr[2].src='https://image.nengun.com/catalogue/1024x768/nengun-0000-01-wald-sports_line_lx570_aero_kit-330f318c.png';
+			
+			arr[3]=new Image();
+			arr[3].src='https://icdn2.themanual.com/image/themanual/hennessey-venom-f5-2.jpg';
+			
+			arr[4]=new Image();
+			arr[4].src='https://cdn.hiconsumption.com/wp-content/uploads/2019/01/Lamborghini-Urus-By-Manhart-Performance-0-Hero-1087x725.jpg';
+
+		
+
+			function s(){
+			document.getElementById("resim").src=document.getElementById("second").src;
+				
+					}
+
+			function f(){
+						document.getElementById("resim").src=document.getElementById("first").src;
+					
+					}
+
+			function t(){
+						document.getElementById("resim").src=document.getElementById("three").src;
+						
+					}
+
+
+			function x(){
+						document.getElementById("resim").src=document.getElementById("four").src;
+						
+					}
+
+			function back(){
+				if(q==0){
+					q=5;
+					document.getElementById("resim").src = arr[q-1].src;
+					document.getElementById("first").src = arr[q-1].src;
+
+
+					q--;
+				}else{
+					document.getElementById("resim").src = arr[q-1].src;
+					document.getElementById("first").src = arr[q-1].src;
+					
+					q--;
+				}
+			}
+			
+			function next(){
+				if(q==4){
+					q=-1;
+					document.getElementById("resim").src = arr[q+1].src;
+					document.getElementById("first").src = arr[q+1].src;
+				
+					q++;
+				}else{
+					document.getElementById("resim").src=arr[q+1].src;
+					document.getElementById("first").src = arr[q+1].src;
+					
+					q++;
+					
+			}
+
+
+
+
+
+
+
+
+		}var v=1;
+
+	
+		function back2(){
+				if(v==0){
+					v=4;
+					document.getElementById("second").src=arr[v].src;
+				
+					
+				}
+				else{
+				v-=1;
+				document.getElementById("second").src=arr[v].src;
+									
+			}
+
+
+			}
+
+			function next2(){
+			
+				if(v==4){
+					document.getElementById("second").src=arr[0].src;
+					v=0;
+				}
+				else{
+					v+=1;
+					document.getElementById("second").src=arr[v].src;				}
+			}
+
+			
+
+		
+
+
+
+
+
+		var b=2;
+
+		function next3(){
+			if(b==4){
+					document.getElementById("three").src=arr[0].src;
+					b=0;
+				}
+				else{
+					b+=1;
+					document.getElementById("three").src=arr[b].src;				}
+			
+}
+
+		function back3(){
+				if(b==0){
+					b=4;
+					document.getElementById("three").src=arr[b].src;
+				
+					
+				}
+				else{
+				b-=1;
+				document.getElementById("three").src=arr[b].src;
+									
+			}
+
+
+			}
+
+
+
+
+
+		var n=3;
+		function next4(){
+			if(n==4){
+					document.getElementById("four").src=arr[0].src;
+					n=0;
+				}
+				else{
+					n+=1;
+					document.getElementById("four").src=arr[n].src;				}
+			}
+
+					function back4(){
+				if(n==0){
+					n=4;
+					document.getElementById("four").src=arr[n].src;
+					
+					
+				}
+				else{
+				n-=1;
+				document.getElementById("four").src=arr[n].src;
+									
+			}
+
+
+			}
+		function go(){
+			var a = document.getElementById("in").value;
+ 		 	var result = a.link("https://kolesa.kz/cars/"+a+"/");
+			document.getElementById("sear").innerHTML = result;
+
+		}
+		
+		function apa(){
+			caas-=1;
+			if(caas==-1){
+				caas=4;
+			}
+			document.getElementById("PA").innerHTML = pass[caas];
+
+		}
+		function apa2(){
+			caas+=1;
+			if(caas==5){
+				caas=0;
+			}
+			document.getElementById("PA").innerHTML = pass[caas];
+		}
+    
+
